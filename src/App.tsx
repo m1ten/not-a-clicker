@@ -5,10 +5,6 @@ function App() {
   const [count, setCount] = useState(0);
 
   function increment() {
-    if (isNaN(value)) {
-      setValue(1);
-    }
-
     setCount(count + value);
   }
 
@@ -20,7 +16,7 @@ function App() {
         <div>
           <input
             id="value-input"
-            onChange={(e) => setValue(Number(e.target.value))}
+            onChange={(e) => setValue(Number(e.target.value) || 1)}
             placeholder="Enter a value..."
           />
           <button type="button" onClick={() => increment()}>
