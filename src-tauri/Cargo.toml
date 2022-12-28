@@ -1,7 +1,7 @@
 [package]
-name = "clicker-ts"
+name = "not-a-clicker"
 version = "0.0.0"
-description = "clicker in typescript and rust"
+description = "not-a-clicker game in react-ts"
 authors = ["miten"]
 license = ""
 repository = ""

@@ -1,3 +1,3 @@
-# Clicker-TS
+# not-a-clicker
 
-Clicker-TS is a simple clicker game written in TypeScript using React.
+*not-a-clicker* is not a simple clicker game written in ts using react.
