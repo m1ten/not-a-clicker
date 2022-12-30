@@ -11,7 +11,12 @@
   },
   "tauri": {
     "allowlist": {
-      "all": true
+      "all": true,
+      "http": {
+        "all": true, 
+        "request": true,
+        "scope": ["https://en.wikipedia.org/wiki/Special:RandomInCategory/*"]
+      }
     },
     "bundle": {
       "active": true,
