@@ -1,0 +1,72 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Fonts/FiraCode-Retina.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://MainPanel.cs" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 75
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 65
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 48
+font_data = ExtResource( 1 )
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MainPanel" type="Panel" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="MainPanel"]
+margin_top = 72.0
+margin_right = 1280.0
+margin_bottom = 166.0
+custom_colors/font_color_shadow = Color( 0.686275, 0.647059, 0.647059, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 1 )
+text = "Clicker for no lifers"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClickerButton" type="Button" parent="MainPanel"]
+margin_left = 384.0
+margin_top = 320.0
+margin_right = 896.0
+margin_bottom = 576.0
+flat = true
+
+[node name="ClickerButtonText" type="Label" parent="MainPanel/ClickerButton"]
+margin_left = -385.0
+margin_top = 2.0
+margin_right = 896.0
+margin_bottom = 258.0
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.647059, 0.672488, 0.686275, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 2 )
+text = "Don't click"
+align = 1
+valign = 1
+
+[node name="Count" type="Label" parent="MainPanel"]
+margin_top = 192.0
+margin_right = 1280.0
+margin_bottom = 320.0
+custom_fonts/font = SubResource( 3 )
+text = "0 click"
+align = 1
+valign = 1
