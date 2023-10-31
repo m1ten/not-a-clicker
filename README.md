@@ -3,6 +3,6 @@
 
 *some are just tutorial apps*
 
-You may use, modify, and distribute any project in this repository, subject to the terms of the [license](./LICENSE).
+You may use, modify, and distribute any project in this repository, subject to the terms of the [license](./LICENSE).\
 P.S. Previously licensed due to some issue, it is public domain as far as I am concerned. 
 
